@@ -50,5 +50,22 @@ public class SpellChecker
           System.out.println(dictionary[i]);
         }
       }
+      public boolean spellcheck(String word){
+        boolean isTrue = false;
+        for(String i : dictionary){
+          if(word.equals(i)){
+            isTrue = true;
+          }
+        }
+        return isTrue;
+      }
+
+      public void printStartsWith(String letter){
+        for(String i : dictionary){
+          if(letter.equals(i.substring(0,1))){
+            System.out.println(i);
+          }
+        }
+      }
+      }
     
-   }
