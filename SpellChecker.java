@@ -45,5 +45,10 @@ public class SpellChecker
         return lines.toArray(new String[lines.size()]);
       }
       
+      public void print10(){
+        for(int i = 0; i < 10; i++){
+          System.out.println(dictionary[i]);
+        }
+      }
     
    }
